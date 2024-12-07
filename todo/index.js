@@ -12,6 +12,11 @@ addButton.addEventListener("click", () => {
   elem.style.justifyContent = "space-between";
 
   const value = input.value.trim();
+
+  if (!value) {
+    return;
+  }
+
   const li = document.createElement("li");
   li.textContent = value;
 
@@ -21,7 +26,6 @@ addButton.addEventListener("click", () => {
   const removeBtn = document.createElement("button");
   removeBtn.textContent = "Remove Todo";
   removeBtn.style.cursor = "pointer";
-  removeBtn.style.backgroundColor = "red";
   removeBtn.style.border = "none";
   removeBtn.style.fontSize = "16px";
   removeBtn.style.padding = "10px";
