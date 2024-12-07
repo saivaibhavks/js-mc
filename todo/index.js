@@ -8,6 +8,8 @@ addButton.addEventListener("click", () => {
   elem.style.marginTop = "20px";
   elem.style.border = "1px solid black";
   elem.style.padding = "20px";
+  elem.style.display = "flex";
+  elem.style.justifyContent = "space-between";
 
   const value = input.value;
   const li = document.createElement("li");
@@ -16,7 +18,11 @@ addButton.addEventListener("click", () => {
   li.style.listStyleType = "none";
   li.style.fontWeight = "600";
 
+  const removeBtn = document.createElement("button");
+  removeBtn.textContent = "Remove Todo";
+
   elem.appendChild(li);
+  elem.appendChild(removeBtn);
   listItems.appendChild(elem);
   input.value = "";
 });

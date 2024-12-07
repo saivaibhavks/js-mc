@@ -20,7 +20,7 @@ body {
     width: 400px;
     height: 40px;
   }
-  button {
+  .add-todo {
     width: 100px;
     cursor: pointer;
     background-color: rgb(73, 189, 232);
