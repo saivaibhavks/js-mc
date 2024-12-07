@@ -11,7 +11,7 @@ addButton.addEventListener("click", () => {
   elem.style.display = "flex";
   elem.style.justifyContent = "space-between";
 
-  const value = input.value;
+  const value = input.value.trim();
   const li = document.createElement("li");
   li.textContent = value;
 
@@ -20,6 +20,11 @@ addButton.addEventListener("click", () => {
 
   const removeBtn = document.createElement("button");
   removeBtn.textContent = "Remove Todo";
+  removeBtn.style.cursor = "pointer";
+  removeBtn.style.backgroundColor = "red";
+  removeBtn.style.border = "none";
+  removeBtn.style.fontSize = "16px";
+  removeBtn.style.padding = "10px";
 
   elem.appendChild(li);
   elem.appendChild(removeBtn);
