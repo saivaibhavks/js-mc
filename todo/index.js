@@ -1,7 +1,4 @@
 const input = document.querySelector(".input-txt");
+const addButton = document.querySelector(".add-todo");
 
-let todo = [];
-
-input.addEventListener("input", (e) => {
-  console.log("event e", e.target.value);
-});
+addButton.addEventListener("click", () => {});

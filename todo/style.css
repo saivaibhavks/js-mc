@@ -18,11 +18,17 @@
   button {
     width: 100px;
     cursor: pointer;
-    background-color: rgb(202, 210, 213);
+    background-color: rgb(73, 189, 232);
+    border: none;
+    font-size: 16px;
   }
 }
 
 .task-actions {
   display: flex;
   gap: 20px;
+}
+
+.list-items {
+  margin-top: 20px;
 }
