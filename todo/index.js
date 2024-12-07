@@ -26,6 +26,10 @@ addButton.addEventListener("click", () => {
   removeBtn.style.fontSize = "16px";
   removeBtn.style.padding = "10px";
 
+  removeBtn.addEventListener("click", () => {
+    listItems.removeChild(elem);
+  });
+
   elem.appendChild(li);
   elem.appendChild(removeBtn);
   listItems.appendChild(elem);
