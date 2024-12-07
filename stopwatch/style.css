@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  gap: 5px;
+  input {
+    width: 100px;
+  }
+}
+
+.btn-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
